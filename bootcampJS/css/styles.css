@@ -1,0 +1,13 @@
+.a-buttons{
+}
+.circle-red{}
+.two-buttons{
+display: flex;
+}
+.actions-buttons-div{
+width: 300px;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
