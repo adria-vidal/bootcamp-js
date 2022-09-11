@@ -1,46 +1,122 @@
-.container{
-    width: 500px; 
-    height: 200px; 
-    border: 3px solid #555;
-    background: #eee1e1;
-    
+.container {
+  width: 500px;
+  height: 200px;
+  border: 3px solid #555;
+  background: #eee1e1;
+}
+.principal {
+  width: 425px;
+  height: 150px;
+  border: 3px solid #555;
+  background: #312e2e;
+  position: relative;
+  top: 12%;
+  margin: 0 auto;
+  display: flex;
+}
+.a-buttons {
+    width: 30px;
+     height: 30px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #fd0000;
+}
+.circle-red {
+}
+
+.actions-buttons-div {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.two-buttons {
+  display: flex;
+  align-items: flex-end;
+}
+.cuadrado {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #555;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+
 
 }
-.principal{
-    width: 425px; 
-    height: 150px; 
-    border: 3px solid #555;
-    background: #312e2e;
-    position: relative;
-    top: 12%;
-    margin: 0 auto;
-    display: flex;
-    
+.two-buttons,
+.controls-cont,
+.options-buttons {
+  flex: 1;
+  border: thin solid #777;
 }
-.a-buttons{
+.options-buttons {
+  display: flex;
+  align-items: flex-end;
 }
-.circle-red{}
-.two-buttons{
-display: flex;
+.rect-action-buttons {
+  border: 3px solid #555;
+  
+  width: 100px;
+  border-radius: 4px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: #eee1e1;
+  margin-bottom: 15%;
 }
-.actions-buttons-div{
-width: 100%;
-height: 150px;
-display: flex;
-justify-content:center;
+.rect-action-buttons button {
+  width: 20px;
+  background-color: black;
+  border-radius: 4px;
+  margin-bottom: 8%;  
+}
 
-}
-.two-buttons{
-align-items: flex-end;
-}
-.cuadrado{
-     width: 50px; 
-     height: 50px; 
-     border: 3px solid #555;
-     margin-bottom: 10%;
-     
-}
-.two-buttons,.move-buttons,.options-buttons{
-    flex:1;
-    border:thin solid #777;
-}
+/* CRUZ DIRECCION */
+// Pad
+.btn-direction
+  position relative
+  margin-left 40px
+  top 60px
+  &:before
+    content ""
+    position absolute
+    z-index 1
+    top 30px
+    left 30px
+    width 30px
+    height 30px
+    background-color #353535
+    border-radius 100%
+  .vertical,
+  .horizontal
+    position absolute
+    left 30px
+    width 30px
+    height 90px
+    background #444
+    border-radius 5px
+    &:before
+      content ""
+      position relative
+      top 99px
+      left 8px
+      width 0
+      height 0
+      border-left 7px solid transparent
+      border-right 7px solid transparent
+      border-top 7px solid #dedede
+    &:after
+      content ""
+      position relative
+      top -27px
+      left -5.6px
+      width 0
+      height 0
+      border-left 7px solid transparent
+      border-right 7px solid transparent
+      border-bottom 7px solid #dedede
+  // Rotate 90º
+  .horizontal
+    rotation 90deg
