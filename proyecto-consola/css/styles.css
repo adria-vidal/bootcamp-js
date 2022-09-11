@@ -7,7 +7,7 @@
 .principal {
   width: 425px;
   height: 150px;
-  border: 3px solid #555;
+  border: 3px solid;
   background: #312e2e;
   position: relative;
   top: 12%;
@@ -15,14 +15,14 @@
   display: flex;
 }
 .a-buttons {
-    width: 30px;
-     height: 30px;
-     -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-     border-radius: 50%;
-     background: #fd0000;
-}
-.circle-red {
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fd0000;
+  margin: 0 auto;
+  margin-top: 5%;
 }
 
 .actions-buttons-div {
@@ -36,29 +36,28 @@
   align-items: flex-end;
 }
 .cuadrado {
-  width: 50px;
-  height: 50px;
-  border: 3px solid #555;
+  width: 35px;
+  height: 35px;
   margin-bottom: 10%;
-  border-radius: 10px;
+  border-radius: 2px;
   text-align: center;
   justify-content: center;
-
-
+  background-color: aliceblue;
 }
 .two-buttons,
 .controls-cont,
 .options-buttons {
   flex: 1;
-  border: thin solid #777;
+  border: thin solid #312e2e;
 }
 .options-buttons {
   display: flex;
   align-items: flex-end;
+
 }
 .rect-action-buttons {
+    
   border: 3px solid #555;
-  
   width: 100px;
   border-radius: 4px;
   margin: 0px auto;
@@ -66,57 +65,113 @@
   background-color: #eee1e1;
   margin-bottom: 15%;
 }
+
 .rect-action-buttons button {
   width: 20px;
   background-color: black;
   border-radius: 4px;
-  margin-bottom: 8%;  
+  margin-bottom: 8%;
 }
 
 /* CRUZ DIRECCION */
-// Pad
-.btn-direction
-  position relative
-  margin-left 40px
-  top 60px
-  &:before
-    content ""
-    position absolute
-    z-index 1
-    top 30px
-    left 30px
-    width 30px
-    height 30px
-    background-color #353535
-    border-radius 100%
-  .vertical,
-  .horizontal
-    position absolute
-    left 30px
-    width 30px
-    height 90px
-    background #444
-    border-radius 5px
-    &:before
-      content ""
-      position relative
-      top 99px
-      left 8px
-      width 0
-      height 0
-      border-left 7px solid transparent
-      border-right 7px solid transparent
-      border-top 7px solid #dedede
-    &:after
-      content ""
-      position relative
-      top -27px
-      left -5.6px
-      width 0
-      height 0
-      border-left 7px solid transparent
-      border-right 7px solid transparent
-      border-bottom 7px solid #dedede
-  // Rotate 90º
-  .horizontal
-    rotation 90deg
+.controls-cont {
+  display: block;
+  position: relative;
+}
+.btn-direction {
+  position: relative;
+  margin-left: 40px;
+  top: 25%;
+}
+:btn-direction:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+.vertical,
+.horizontal {
+  position: absolute;
+  left: 15%;
+  width: 30px;
+  height: 90px;
+  background-color: rgb(22, 21, 21);
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: #dedede;
+}
+vertical,
+horizontal:before {
+  content: '';
+  position: relative;
+  z-index: 1;
+  top: 99px;
+  left: 8px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #dedede;
+}
+:vertical,
+horizontal:after {
+  content: '';
+  position: relative;
+  top: -27px;
+  left: -5px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #dedede;
+}
+.horizontal {
+  transform: rotate(90deg);
+}
+
+.two-buttons span {
+  color: #fd0000;
+}
+.flecha-right {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(-90deg);
+  margin-left: 7.5%;
+}
+.flecha-left {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(90deg);
+  margin-left: 7.5%;
+  margin-top: 40px;
+}
+.flecha-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(-90deg);
+  margin-left: 7.5%;
+  margin-bottom: 40px;
+}
+.flecha-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(90deg);
+  margin-left: 7.5%;
+}
