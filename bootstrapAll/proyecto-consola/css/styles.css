@@ -1,0 +1,177 @@
+.container {
+  width: 500px;
+  height: 200px;
+  border: 3px solid #555;
+  background: #eee1e1;
+}
+.principal {
+  width: 425px;
+  height: 150px;
+  border: 3px solid;
+  background: #312e2e;
+  position: relative;
+  top: 12%;
+  margin: 0 auto;
+  display: flex;
+}
+.a-buttons {
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fd0000;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.actions-buttons-div {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.two-buttons {
+  display: flex;
+  align-items: flex-end;
+}
+.cuadrado {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10%;
+  border-radius: 2px;
+  text-align: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.two-buttons,
+.controls-cont,
+.options-buttons {
+  flex: 1;
+  border: thin solid #312e2e;
+}
+.options-buttons {
+  display: flex;
+  align-items: flex-end;
+
+}
+.rect-action-buttons {
+    
+  border: 3px solid #555;
+  width: 100px;
+  border-radius: 4px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: #eee1e1;
+  margin-bottom: 15%;
+}
+
+.rect-action-buttons button {
+  width: 20px;
+  background-color: black;
+  border-radius: 4px;
+  margin-bottom: 8%;
+}
+
+/* CRUZ DIRECCION */
+.controls-cont {
+  display: block;
+  position: relative;
+}
+.btn-direction {
+  position: relative;
+  margin-left: 40px;
+  top: 25%;
+}
+:btn-direction:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+.vertical,
+.horizontal {
+  position: absolute;
+  left: 15%;
+  width: 30px;
+  height: 90px;
+  background-color: rgb(22, 21, 21);
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: #dedede;
+}
+vertical,
+horizontal:before {
+  content: '';
+  position: relative;
+  z-index: 1;
+  top: 99px;
+  left: 8px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #dedede;
+}
+:vertical,
+horizontal:after {
+  content: '';
+  position: relative;
+  top: -27px;
+  left: -5px;
+  width: 0px;
+  height: 0px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #dedede;
+}
+.horizontal {
+  transform: rotate(90deg);
+}
+
+.two-buttons span {
+  color: #fd0000;
+}
+.flecha-right {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(-90deg);
+  margin-left: 7.5%;
+}
+.flecha-left {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(90deg);
+  margin-left: 7.5%;
+  margin-top: 40px;
+}
+.flecha-up {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(-90deg);
+  margin-left: 7.5%;
+  margin-bottom: 40px;
+}
+.flecha-down {
+  width: 0;
+  height: 0;
+  border-left: 25px solid #42403d;
+  border-top: 12.5px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  transform: rotate(90deg);
+  margin-left: 7.5%;
+}
