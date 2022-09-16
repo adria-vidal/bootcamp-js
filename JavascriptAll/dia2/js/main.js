@@ -80,10 +80,10 @@
 let radio = parseFloat(prompt('Cual es el radio del circulo?? '));
 areaCirculo(radio);
 
-function areaCirculo(radio) {
-  let pi = Math.PI;
+function areaCirculo(r) {
+  const pi = Math.PI;
 
-  let resultado = pi * radio ** 2;
+  let resultado = pi * (r ** 2);
   console.log('El area es ' + resultado);
 
   return resultado;
