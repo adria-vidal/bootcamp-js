@@ -183,17 +183,33 @@ que no.*/
 
 let n1 = parseInt(prompt('Introduce el primer numero: '));
 let n2 = parseInt(prompt('Introduce el primer numero: '));
-let operador = parseInt(prompt('Introduce el operador: ( + , - , * , / , %) '));
+let operador = prompt('Introduce el operador: ( + , - , * , / , %) ');
 
 calculadora(n1, n2, operador);
-function calculadora(n1, n2, operador) {
-  switch (operador) {
+function calculadora(n1, n2, op) {
+  switch (op) {
     case '+':
-      console.log(n1 + n2);
-      console.log(n1 + ' + ' + n2 + ' es: ' + n1 + n2);
+      console.log( n1 + n2);
+      break;
+    case '-':
+      console.log( n1 - n2);
+
+      break;
+    case '*':
+      console.log( n1 * n2);
+
+      break;
+    case '/':
+      console.log( n1 / n2);
+
+      break;
+    case '%':
+      console.log( n1 % n2);
+
       break;
 
     default:
+      console.log('Sin operacion');
       break;
   }
 }
