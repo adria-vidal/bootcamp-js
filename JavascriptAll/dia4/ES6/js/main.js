@@ -63,19 +63,32 @@ sean flexibles
 // let Carles = ['Musica', 'Profesor', 'estudios', 'Bootcamp'];
 // console.log(Galardona(Adria));
 
-const spreadPropiedades = (nombre, edad, altura, ciudad, poder) => {
-    /*
-    Extension literal...
-    nos permite ahorrarnos el escribir el nombre
-    del argumento venido en la funcion cuando asignamos el valor
-    */
-  return {
-    nombre,
-    edad,
-    altura,
-    ciudad,
-    poder,
-  };
-};
-let Matias = ['Matias', 20, 1.85, 'Gandia', 'Programar'];
-console.log(spreadPropiedades(...Matias));
+// const spreadPropiedades = (nombre, edad, altura, ciudad, poder) => {
+//   /*
+//     Extension literal...
+//     nos permite ahorrarnos el escribir el nombre
+//     del argumento venido en la funcion cuando asignamos el valor
+//     */
+//   return {
+//     nombre,
+//     edad,
+//     altura,
+//     ciudad,
+//     poder,
+//   };
+// };
+// let Matias = ['Matias', 20, 1.85, 'Gandia', 'Programar'];
+// console.log(spreadPropiedades(...Matias));
+
+
+// let arrayColores = ["blanco","negro","azul","rojo"]
+
+// for (const colorin of arrayColores) {
+//   console.log(colorin);
+// }
+
+//ForIn   muestra cada indice del array
+let arrayAlimentos =["nueces","avellanas","cacahuete","almendras","pistachos"]
+for (let indice in arrayAlimentos) {
+  console.log(indice);
+}
