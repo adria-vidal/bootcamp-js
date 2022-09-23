@@ -5,14 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles .css">
 </head>
 <body>
-    <div class="contenedorItem"><img src="" alt="" draggable="true" id="libro1" ></div>
-    <div class="contenedorItem"><img src="" alt="" draggable="true" id="libro2"></div>
-    <div class="contenedorItem"><img src="" alt="" draggable="true" id="libro3"></div>
-
-    <div class="contenedorItem"><img src="" alt="" draggable="true" id="contenedor1"></div>
+    <div class="general">
+        <div class="showcase">
+            <div class="contenedorShowcase">
+                <div class="contenedorItem"><img src="" id="libro" class="imagenDisplay" alt="book" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="" id="libro2" class="imagenDisplay" alt="energy" draggable="true" ondragstart="drag(event)"/></div>
+                <div class="contenedorItem"><img src="" id="libro3" class="imagenDisplay" alt="computer" draggable="true" ondragstart="drag(event)"/></div>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="contenedorCart">
+                <div class="actualCart">
+                    <img src="img/cart.jpg" id="contenedor1" class="pictures" ondrop="drop(event)" ondragover="allowDrop(event)"/>
+                </div>
+                <div id="totalCarrito" class="totalPrice"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
