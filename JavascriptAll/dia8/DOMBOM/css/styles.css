@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zona {
+  height: 10em;
+  width: 10em;
+  background-color: black;
+}
+.zonab {
+  height: 10em;
+  width: 10em;
+  background-color: red;
+}
+.defecto {
+  height: 10em;
+  width: 10em;
+  background-color: green;
+}

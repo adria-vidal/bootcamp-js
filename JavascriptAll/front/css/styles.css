@@ -52,7 +52,6 @@ body {
 }
 .monedas {
   height: 17em;
-
   display: flex;
   justify-content: center;
   align-items: center;
